@@ -26,3 +26,6 @@ hs_err_pid*
 
 # gradle files
 .gradle/*
+
+# build files
+SimpleServer/build/*

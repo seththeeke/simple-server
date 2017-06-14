@@ -1,0 +1,18 @@
+project(':SimpleServer') {
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+ 
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+    	compile group: 'org.eclipse.jetty', name: 'jetty-server', version: '9.4.6.v20170531'
+    	compile group: 'org.eclipse.jetty', name: 'jetty-util', version: '9.4.5.v20170502'
+    	compile group: 'org.eclipse.jetty', name: 'jetty-servlets', version: '9.4.6.v20170531'
+    	compile group: 'org.eclipse.jetty', name: 'jetty-http', version: '9.4.5.v20170502'
+    	compile group: 'org.eclipse.jetty', name: 'jetty-io', version: '9.4.5.v20170502'
+    	compile group: 'org.eclipse.jetty', name: 'jetty-security', version: '9.4.5.v20170502'
+        compile group: 'org.eclipse.jetty', name: 'jetty-servlet', version: '9.4.6.v20170531'
+	}
+}
