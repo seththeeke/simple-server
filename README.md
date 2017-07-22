@@ -1,6 +1,10 @@
 # simple-server
 ## A Java server using Jetty
 
+### Requirements:<br>
+Java 8 - v1.8.0_92 or later<br>
+Gradle build tool<br>
+
 This project contains everything you need to create and start a simple web server and start accepting http requests using HttpServlets. To test, fork and clone this repository. Ensure you have gradle installed on your machine(https://gradle.org/install/) and navigate to the base project directory. 
 
 To run:<br>
