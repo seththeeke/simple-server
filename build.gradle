@@ -1,6 +1,18 @@
 project(':SimpleServer') {
     apply plugin: 'java'
     apply plugin: 'eclipse'
+
+    //create a single Jar with all dependencies
+    task fatJar(type: Jar) {
+        manifest {
+            attributes 'Implementation-Title': 'Simple Server Jar',
+                'Implementation-Version': 1.0,
+                'Main-Class': 'server.JettyServer'
+        }
+        baseName = 'project-jar'
+        from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+        with jar
+    }
  
     repositories {
         mavenCentral()
